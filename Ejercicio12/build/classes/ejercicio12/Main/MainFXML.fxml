@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ejercicio12.Main.MainFXMLController">
+   <children>
+      <BorderPane prefHeight="495.0" prefWidth="707.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <Pane prefHeight="495.0" prefWidth="289.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="65.0" layoutY="75.0" text="Nombre" />
+                  <Label layoutX="65.0" layoutY="213.0" prefHeight="16.0" prefWidth="132.0" text="Fecha" />
+                  <Label layoutX="65.0" layoutY="376.0" text="Color" />
+                  <DatePicker fx:id="fecha" layoutX="65.0" layoutY="235.0" onAction="#fechaOnAction" prefHeight="26.0" prefWidth="190.0" />
+                  <TextField fx:id="txtNombre" layoutX="65.0" layoutY="107.0" onKeyReleased="#txtNombreOnKeyReleased" prefHeight="26.0" prefWidth="190.0" />
+                  <ColorPicker fx:id="color" layoutX="65.0" layoutY="400.0" prefWidth="190.0" />
+               </children>
+            </Pane>
+         </left>
+         <center>
+            <Separator orientation="VERTICAL" prefHeight="495.0" prefWidth="35.0" BorderPane.alignment="CENTER" />
+         </center>
+         <right>
+            <Pane prefHeight="495.0" prefWidth="399.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lbl" layoutX="182.0" layoutY="240.0" text="Label" />
+                  <Slider fx:id="sliderSize" layoutX="26.0" layoutY="405.0" max="48.0" min="12.0" onDragDetected="#sliderSizeOnDragDetected" prefHeight="25.0" prefWidth="347.0" />
+               </children>
+            </Pane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
