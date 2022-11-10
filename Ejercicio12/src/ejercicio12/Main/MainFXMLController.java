@@ -49,7 +49,7 @@ public class MainFXMLController implements Initializable {
         
     @FXML
     private void sliderSizeOnDragDetected(){
-        lbl.setStyle("font-size {}");
+        lbl.setStyle("-fx-font-size :" + sliderSize.getValue() + " px;");
     }
     
     @Override

@@ -31,8 +31,8 @@
          <right>
             <Pane prefHeight="495.0" prefWidth="399.0" BorderPane.alignment="CENTER">
                <children>
-                  <Label fx:id="lbl" layoutX="182.0" layoutY="240.0" text="Label" />
-                  <Slider fx:id="sliderSize" layoutX="26.0" layoutY="405.0" max="48.0" min="12.0" onDragDetected="#sliderSizeOnDragDetected" prefHeight="25.0" prefWidth="347.0" />
+                  <Label fx:id="lbl" alignment="CENTER" contentDisplay="CENTER" layoutX="182.0" layoutY="240.0" text="Label" />
+                  <Slider fx:id="sliderSize" layoutX="26.0" layoutY="405.0" max="48.0" min="12.0" onMouseDragged="#sliderSizeOnDragDetected" prefHeight="25.0" prefWidth="347.0" />
                </children>
             </Pane>
          </right>
