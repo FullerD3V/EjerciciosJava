@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="388.0" prefWidth="539.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="ejerciciochoicebox.Main.MainFXMLController">
+   <children>
+      <BorderPane prefHeight="388.0" prefWidth="539.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane prefHeight="128.0" prefWidth="539.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ChoiceBox fx:id="chbox" layoutX="195.0" layoutY="51.0" prefWidth="150.0" />
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btn" layoutX="50.0" layoutY="48.0" mnemonicParsing="false" onAction="#btnOnAction" text="Mas información" />
+                  <Label fx:id="lbl" layoutX="147.0" layoutY="102.0" />
+               </children>
+            </Pane>
+         </center>
+         <bottom>
+            <Pane prefHeight="74.0" prefWidth="539.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="119.0" layoutY="27.0" text="2022-2023 DAM 2 Ronaldo Jiménez" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
